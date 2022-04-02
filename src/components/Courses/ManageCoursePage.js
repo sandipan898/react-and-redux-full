@@ -9,7 +9,9 @@ import { newCourse } from "../../../tools/mockData";
 import Spinner from "../common/Spinner";
 import { toast } from "react-toastify";
 
-function ManageCoursePage({
+// exporting the raw function as named export (for testing)
+// exporting the function called with connect method as default export (for using with redux store)
+export function ManageCoursePage({
   courses,
   authors,
   loadCourses,
